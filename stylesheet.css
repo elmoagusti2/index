@@ -278,7 +278,7 @@ section#section2 {
 }
 
 .ribbon.personal {
-    background-color: greenyellow;
+    background-color: green;
 }
 
 section#section3 {
@@ -404,7 +404,7 @@ footer a:hover {
         
     }
     .descExperience {
-        position: sticky;
+        position: relative;
         margin-bottom: 5%;
 
     }
