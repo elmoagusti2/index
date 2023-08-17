@@ -103,7 +103,7 @@ header {
     width: 250px;
     height: 0;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -132,7 +132,7 @@ header {
     display: block;
 }
 
-section#section1 {
+section#sectionHome {
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: row;
@@ -151,7 +151,7 @@ section#section1 {
     transition: 0.3s;
 }
 
-#section1 h1 {
+#sectionHome h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -180,13 +180,55 @@ section#section1 {
     color: orange;
 }
 
-section#section2 {
+section#sectionSkill {
     height: 100%;
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
-    
+
+}
+
+#sectionSkill h2 {
+    margin-top: 8%;
+    margin-left: 5%;
+
+}
+
+.skill {
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    background-color: #263A29;
+    justify-content: center;
+}
+
+.skill img {
+    object-fit: cover;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.skill img:hover {
+    scale: 1.2;
+}
+
+section#sectionPorto {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+
 }
 
 .portofolio {
@@ -201,11 +243,11 @@ section#section2 {
     justify-content: center;
 }
 
-#section2 h2 {
-    
+#sectionPorto h2 {
+
     margin-top: 1%;
     margin-left: 5%;
-    
+
 }
 
 .card {
@@ -281,11 +323,11 @@ section#section2 {
     background-color: green;
 }
 
-section#section3 {
+section#sectionExp {
     height: 100vh;
 }
 
-#section3 h2 {
+#sectionExp h2 {
     margin-top: 1%;
     margin-left: 5%;
     color: white;
@@ -331,10 +373,10 @@ section#section3 {
     background-color: orange;
     align-items: center;
     align-content: center;
-    
+
 }
 
-.descExperience.second{
+.descExperience.second {
     top: 10%;
 }
 
@@ -352,12 +394,13 @@ footer {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    
+
     text-align: center;
     color: white;
     justify-content: center;
 
 }
+
 footer a {
     text-decoration: none;
     color: #ffff;
@@ -370,6 +413,7 @@ footer a:hover {
 
     color: orange;
 }
+
 @media(max-width: 768px) {
 
     .navbar .links,
@@ -388,7 +432,7 @@ footer a:hover {
     .ImageProfile {
         display: none;
     }
-    
+
     .progressBar {
         border-left: #263A29;
         align-items: center;
@@ -399,10 +443,12 @@ footer a:hover {
     .progressBar li {
         display: none;
     }
-    section#section3 {
+
+    section#sectionExp {
         height: 100%;
-        
+
     }
+
     .descExperience {
         position: relative;
         margin-bottom: 5%;
