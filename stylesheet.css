@@ -11,7 +11,7 @@ html {
 
 body {
     height: 100vh;
-    background-color: #263A29;
+    background-color: #689B8A;
     background-size: cover;
     background-position: center;
 }
@@ -30,7 +30,7 @@ header a {
 
 header a:hover {
 
-    color: orange;
+    color: #F9CB99;
 }
 
 header {
@@ -52,7 +52,7 @@ header {
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
-    color: orange;
+    color: #F9CB99;
 }
 
 .navbar .links {
@@ -71,12 +71,12 @@ header {
 }
 
 .navbar .toggle_btn:hover {
-    color: orange;
+    color: #F9CB99;
     scale: 1.2;
 }
 
 .action_btn {
-    background-color: orange;
+    background-color: #F9CB99;
     color: #ffff;
     width: 150px;
     padding: 0.5rem 1rem;
@@ -158,13 +158,16 @@ section#sectionHome {
 
 .typeWriter {
     margin-bottom: 20px;
+    text-align: start;
 }
 
 .ImageProfile {
-    display: flex;
+    padding: 0;
+    display: block;
     border-radius: 50%;
     width: 20%;
-    opacity: 0.5;
+    object-fit: none;
+    opacity: 0.8;
 }
 
 .contact a {
@@ -177,7 +180,7 @@ section#sectionHome {
 
 .contact a:hover {
 
-    color: orange;
+    color: #F9CB99;
 }
 
 section#sectionSkill {
@@ -186,12 +189,15 @@ section#sectionSkill {
     flex-direction: column;
     color: white;
     justify-content: center;
+    margin-bottom: 100px;
 
 }
 
 #sectionSkill h2 {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 1%;
+    text-align: center;
+    text-align: center;
+    color: white;
 
 }
 
@@ -204,7 +210,7 @@ section#sectionSkill {
     flex-wrap: wrap;
     text-align: center;
     color: white;
-    background-color: #263A29;
+    background-color: #689B8A;
     justify-content: center;
 }
 
@@ -239,15 +245,15 @@ section#sectionPorto {
     flex-wrap: wrap;
     text-align: center;
     color: white;
-    background-color: #263A29;
+    background-color: #689B8A;
     justify-content: center;
 }
 
 #sectionPorto h2 {
-
-    margin-top: 1%;
+    /* margin-top: 1%; */
     margin-left: 5%;
-
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -255,7 +261,7 @@ section#sectionPorto {
     height: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.1s;
-    color: #263A29;
+    color: #689B8A;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -290,7 +296,7 @@ section#sectionPorto {
 }
 
 .card a:hover {
-    color: orange;
+    color: #F9CB99;
 }
 
 
@@ -315,7 +321,7 @@ section#sectionPorto {
     top: 3px;
     text-align: center;
     border-radius: 5px;
-    background-color: orange;
+    background-color: #F9CB99;
     color: white;
 }
 
@@ -323,26 +329,89 @@ section#sectionPorto {
     background-color: green;
 }
 
-section#sectionExp {
-    height: 100vh;
-}
-
-#sectionExp h2 {
-    margin-top: 1%;
-    margin-left: 5%;
+#sectionExp {
+    padding: 50px 0;
+  }
+  
+  #sectionExp h2 {
+    text-align: center;
+    margin-bottom: 40px;
     color: white;
-}
-
-.progressBar {
-    border-color: #263A29;
-    margin: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-left: white;
-    border-style: solid;
-    height: 50%;
+  }
+  
+  .timeline {
     position: relative;
-}
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #F9CB99;
+    border: 3px solid white;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item.right::before {
+    left: -10px;
+    right: auto;
+  }
+  
+  .descExperience {
+    background-color: #F9CB99;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .descExperience img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .descExperience h3, h5, p {
+    margin: 5px 0;
+    text-align: center;
+  }
 
 .bar {
     border-radius: 100%;
@@ -353,31 +422,11 @@ section#sectionExp {
     top: 100%;
     text-align: center;
     color: white;
-    background-color: orange;
+    background-color: #F9CB99;
 }
 
 .bar.second {
     top: 20%;
-}
-
-.descExperience {
-    border-radius: 10px;
-    width: 70%;
-    max-width: 500px;
-    position: absolute;
-    padding: 10px;
-    left: 20px;
-    top: 90%;
-    text-align: center;
-    color: white;
-    background-color: orange;
-    align-items: center;
-    align-content: center;
-
-}
-
-.descExperience.second {
-    top: 10%;
 }
 
 .descExperience img {
@@ -386,7 +435,7 @@ section#sectionExp {
     border-radius: 100%;
     height: 50px;
     background-color: white;
-}
+} */
 
 footer {
     padding-top: 10%;
@@ -411,7 +460,7 @@ footer a {
 
 footer a:hover {
 
-    color: orange;
+    color: #F9CB99;
 }
 
 @media(max-width: 768px) {
@@ -434,7 +483,7 @@ footer a:hover {
     }
 
     .progressBar {
-        border-left: #263A29;
+        border-left: #689B8A;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -444,7 +493,7 @@ footer a:hover {
         display: none;
     }
 
-    section#sectionExp {
+    /* section#sectionExp {
         height: 100%;
 
     }
@@ -453,7 +502,23 @@ footer a:hover {
         position: relative;
         margin-bottom: 5%;
 
-    }
+    } */
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+    
+      .timeline::after {
+        left: 20px;
+      }
+    
+      .timeline-item::before {
+        left: 8px !important;
+        right: auto;
+      }
 }
 
 @media(min-width: 768px) {
