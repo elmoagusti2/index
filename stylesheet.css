@@ -438,17 +438,17 @@ section#sectionPorto {
 } */
 
 footer {
-    padding-top: 10%;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center horizontally */
+    justify-content: center; /* center vertically inside footer */
     text-align: center;
     color: white;
-    justify-content: center;
-
+    gap: 10px; /* add spacing between links */
+    background-color: #689B8A; /* optional to make footer stand out */
 }
+
 
 footer a {
     text-decoration: none;
